@@ -1,0 +1,847 @@
+IF ELSE
+
+#include <stdio.h>
+
+int main()
+{ 
+    int a=7;
+    if(a%2==0)
+    {
+        printf("even number");
+    }
+    else
+    {
+        printf("odd number");
+    }
+    return 0;
+}
+
+
+----------------------------------------------------------------------------------------------------------
+
+
+
+
+I#include <stdio.h>
+
+int main()
+{ 
+    int a=15;
+    if(a==5)
+   {
+       printf("a is eaqual to 5");
+   }
+   else if(a==7)
+   {
+       printf("a is eaqual to 7 ");
+   }
+   else if(a==10)
+   {
+       printf("a is eaqual to 10");
+   }
+   else
+   {
+       printf("invalid");
+   }
+   return 0;
+}
+
+
+---------------------------------------------------------------------------------------------------------------
+
+
+
+
+ELSE IF LADDER
+
+
+#include <stdio.h>
+
+int main()
+{ 
+    int a=15;
+    if(a==5)
+   {
+       printf("a is eaqual to 5");
+   }
+   else if(a==7)
+   {
+       printf("a is eaqual to 7 ");
+   }
+   else if(a==10)
+   {
+       printf("a is eaqual to 10");
+   }
+   else
+   {
+       printf("invalid");
+   }
+   return 0;
+}
+
+
+
+
+-------------------------------------------------------------------------------------------------------
+
+
+
+
+GRADE IF ELSE
+
+
+int main()
+{
+    int mark;
+    printf("enr your mark");
+    scanf("%d",&mark);
+    if(mark<=100 && mark>=90)
+    {
+    printf("your grade is A");
+    }
+    else if(mark<=90 && mark>=80)
+    {
+    printf("your grade is B");
+    }
+    else if(mark<=80 && mark>=70)
+    {
+    printf("your grade is C");
+    }
+     else if(mark<=70 && mark>=60)
+     {
+    printf("your grde is D");
+     }
+     else
+     {
+         printf("failed");
+     }
+
+    
+    
+
+    return 0;
+}
+
+
+---------------------------------------------------------------------------------------------------
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a=5;
+    if(a>15)
+    {
+        if(a==18)
+        {
+            printf("hello world");
+        }
+    }
+    return 0;
+}
+
+
+
+-------------------------------------------------------------------------------------------------------
+
+#include <stdio.h>
+
+int main()
+{
+  int a;
+  printf("enter a no:");
+  scanf("%d",&a);
+  switch(a)
+  {
+      case 1:
+      printf("sunday");
+      break;
+      case 2 :
+      printf("monday");
+      break;
+      case 3:
+      printf("tuesday");
+      break;
+      case 4:
+      printf("wednesday");
+      break;
+      case 5:
+      printf("thirsday");
+      break;
+      case 6:
+      printf("friday");
+      break;
+      case 7:
+      printf("saturday");
+      break;
+      default:
+      printf("invalid no");
+      break;
+ }
+
+--------------------------------------------------------------------------------------------------------
+
+
+
+
+void main()
+{
+ int ams,x,rev=0,s;
+ printf("enter a number");
+ scanf("%d",&ams);
+ x=ams;
+ while(x!=0)
+ {
+     x=x%10;
+     rev=rev*10+s;
+     x=x/10;
+ }
+ if(rev == ams)
+ {
+     printf("%d is a paliandrome",ams);
+ }
+ else
+ {
+      printf("%d is not an paliandrome",ams);
+ }
+     
+    
+
+}
+
+
+----------------------------------------------------------------------------------------------------------------
+ARRAY
+
+#include <stdio.h>
+int main()
+{
+    int a[5];
+    printf("enter the array elements:");
+    for(int i=0;i<5;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    printf("enter the array element are..\n");
+    for(int i=0;i<5;i++)
+    {
+        printf ("%d\n",a[i]);
+    }
+    return 0;
+}
+
+
+
+
+
+
+AMSTRONG
+
+#include <stdio.h>
+ int main()
+ {
+     int rem,sum=0,n,a;
+     printf("enter anumber");
+     scanf("%d",&n);
+     a=n;
+     while(a>0)
+     {
+         rem=a%10;
+         sum=sum+rem*rem*rem;
+         a=a/10;
+     }
+     if(sum==n)
+     {
+         printf("%d is an amstrong number",n);
+     }
+     else
+     {
+    
+         printf("%d is not an amstrong number",n);
+     }
+}
+ 
+
+
+-------------------------------------------------------------------------------------------------------------
+
+PALIANDROME
+
+
+#include <stdio.h>
+ void main()
+ {
+     int ams,x,rev=0,s;
+     printf("enter a num \n");
+     scanf("%d",&ams);
+     x=ams;
+     while(x!=0)
+     {
+         s=x%10;
+         rev=rev*10+s;
+         x=x/10;
+         
+     }
+     if(rev==ams)
+     {
+         printf("%d is paliandrome",ams);
+     }
+     else
+     {
+         printf("%d is not a paliandrome",ams);
+     }
+     }
+    
+
+
+
+----------------------------------------------------------------------------------------------------------------------
+
+odd OR EVEN (IF ELSE)
+
+#include <stdio.h>
+
+int main()
+{
+    int num;
+    printf("enter a number");
+    scanf("%d",&num);
+    if(num %2==0)
+    {
+    printf("%d is even number",num);
+    }
+    else
+    {
+    printf("%d is odd number",num);
+    }
+    return 0;
+}
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------
+
+
+ARRAY
+
+#include <stdio.h>
+
+int main()
+{
+    int mark[4]={7,8,9,10};
+    for(int i=0;i<4;i++)
+    {
+        printf("%d\t",mark[i]);
+    }
+    
+    return 0;
+}
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------
+
+
+ASSIGNMENT
+
+1 SUM OF 2 NUMBERS FROM USER
+
+nt main()
+{
+    int num1,num2,sum;
+    printf("enter your number");
+    scanf("%d",&num1);
+    printf("enter your number");
+    scanf("%d",&num2);
+    sum=num1+num2;
+   printf("%d",sum);
+    return 0;
+}
+
+
+---------------------------------------------------------------------------------------------------------------
+
+FIBONACI SERIES
+
+
+
+#include <stdio.h>
+
+int main()
+{
+    
+    int n;
+    printf("enter your number\n");AMSTRONG
+
+#include <stdio.h>
+ int main()
+ {
+     int rem,sum=0,n,a;
+     printf("enter anumber");
+     scanf("%d",&n);
+     a=n;
+     while(a>0)
+     {
+         rem=a%10;
+         sum=sum+rem*rem*rem;
+         a=a/10;
+     }
+     if(sum==n)
+     {
+         printf("%d is an amstrong number",n);
+     }
+     else
+     {
+    
+         printf("%d is not an amstrong number",n);
+     }
+}
+ 
+
+
+-------------------------------------------------------------------------------------------------------------
+
+PALIANDROME
+
+
+#include <stdio.h>
+ void main()
+ {
+     int ams,x,rev=0,s;
+     printf("enter a num \n");
+     scanf("%d",&ams);
+     x=ams;
+     while(x!=0)
+     {
+         s=x%10;
+         rev=rev*10+s;
+         x=x/10;
+         
+     }
+     if(rev==ams)
+     {
+         printf("%d is paliandrome",ams);
+     }
+     else
+     {
+         printf("%d is not a paliandrome",ams);
+     }
+     }
+    
+    scanf("%d",&n);
+    int i,a=0,b=1,c;
+    for(i=0;i<=n;i++)
+    {
+     printf("%d\t",c);
+     c=a+b;
+     a=b;
+     b=c;
+    }
+
+    return 0;
+}
+
+
+--------------------------------------------------------------------
+
+PRIME NUMBER
+
+int main()
+{
+   
+       int n,i,count=0;
+       printf("enter a number to check prime");
+       scanf("%d",&n);
+   for(i=1;i<=n;i++)
+   {
+       if(n%i==0)
+       {
+           count++;
+       }
+   }
+   if(count=2)
+   {
+       printf("the given number is prime");
+   }
+   else
+   {
+printf("not prime");
+}
+    return 0;
+}
+
+
+
+---------------------------------------------------------------------------------------------------------------
+
+
+PRIME NUMBER
+
+int main()
+{
+   
+       int n,i,count=0;
+       printf("enter a number to check prime");
+       scanf("%d",&n);
+   for(i=1;i<=n;i++)
+   {
+       if(n%i==0)
+       {
+           count++;
+       }
+   }
+   if(count=2)
+   {int main()
+{
+   
+       int n,i,count=0;
+       printf("enter a number to check prime");
+       scanf("%d",&n);
+   for(i=1;i<=n;i++)
+   {
+       if(n%i==0)
+       {
+           count++;
+       }
+   }
+   if(count=2)
+   {
+       printf("the given number is prime");
+   }
+   else
+   {
+printf("not prime");
+}
+    return 0;
+}
+
+       printf("the given number is prime");
+   }
+   else
+   {
+printf("not prime");
+}
+    return 0;
+}
+
+----------------------------------------------------------------------------------------------
+
+
+
+
+FACTORIAL
+
+
+#include<stdio.h>  
+int main()    
+{    
+ int i,fact=1,number;    
+ printf("Enter a number: ");    
+  scanf("%d",&number);    
+    for(i=1;i<=number;i++)
+{    
+      fact=fact*i;    
+  }    
+  printf("Factorial of %d is: %d",number,fact);    
+return 0;  
+}   
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+
+FIBONACI 
+
+
+#include <stdio.h>
+
+int main()
+{
+    
+    int n;
+    printf("enter your number\n");
+    scanf("%d",&n);
+    int i,a=0,b=1,c;
+printf("%d\t%d\t",a,b);
+    for(i=0;i<=n;i++)
+    {
+   
+     c=a+b;
+       printf("%d\t",c);
+     a=b;
+     b=c;
+    }
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+2D ARRAY
+
+
+
+
+
+
+#include <stdio.h>
+
+int main()
+{
+    
+  int i=0,j=0;
+  int arr[4][3]={{1,2,3},{2,3,4},{4,4,6}};
+  for(i=0;i<4;i++){
+  for(j=0;j<3;j++)
+  {
+      printf("arr[%d][%d]=%d\n",i,j,arr[i][j]);
+    }
+  }
+
+    return 0;
+}
+
+
+
+
+
+=============================================================================================================
+
+STRING LENGTH
+
+#include<stdio.h>  
+#include <string.h>    
+int main(){    
+char ch[20]={'j', 'a', 'v', 'a', 't', 'p', 'o', 'i', 'n', 't', '\0'};    
+   printf("Length of string is: %zu",strlen(ch));    
+ return 0;    
+}  
+
+
+O/P
+
+Length of string is: 10
+
+
+
+-----------------------------------------------
+
+#include<stdio.h>  
+#include <string.h>    
+int main(){    
+char ch[20]={'L', 'A', 'Y', 'A', 'N', 'A', 'P', 'R', 'A', 'K', 'A','S','H', '\0'};    
+   printf("Length of string is: %zu",strlen(ch));    
+ return 0;    
+}  
+
+
+O/P
+Lenghth of string is :13
+
+
+
+===============================================================================================
+
+
+
+COPPY STRING :strcpy()
+----------------------
+
+
+#include<stdio.h>  
+#include <string.h>    
+int main(){    
+ char ch[20]={'l', 'a', 'y', 'a', 'n', 'a', '\0'};    
+   char ch2[20];    
+   strcpy(ch2,ch);    
+   printf("Value of second string is: %s",ch2);    
+ return 0;    
+}   
+
+
+o/p
+
+value of second string is :layana
+
+
+=======================================================================================================
+strcat()
+
+
+#include<stdio.h>  
+#include <string.h>    
+int main(){    
+  char ch[10]={'l', 'a', 'y', 'a', 'n', 'a','\0'};    
+   char ch2[10]={'c', '\0'};    
+   strcat(ch,ch2);    
+   printf("Value of first string is: %s",ch);    
+ return 0;    
+}
+
+
+o/p
+    
+
+
+value of first string is :layana
+
+
+
+
+
+
+====================================================================================================
+
+LINEAR SEARCH
+
+
+#include <stdio.h>
+
+    int binaryserch(int arr[], int low,int high,int key)
+    {
+        if(high<low)
+        return -1;
+        
+        int mid=(low=high)/2;
+        if (key==arr[mid])
+        return mid;
+        if(key>arr[mid])
+        return binaryserch(arr ,(mid+1),high,key);
+        return binaryserch(arr,low,(mid-1),key);
+    }
+    int main()
+    {
+    int arr[]={2,5,8,12,25,35,45,56,58};
+    int n ,key;
+    n=sizeof(arr)/sizeof(arr[0]);
+     key=25;
+    printf("index:%d\n",binaryserch(arr,0,n-1,key));
+    return 0;
+    }
+    
+    
+
+    
+===========================================================================================================
+
+
+
+INSERTSORT
+
+
+#include<stdio.h>
+int insertsort(int arr[],int n,int key,int capacity)
+{
+    if(n>=capacity)
+    return n;
+    arr[n]=key;
+    return n;
+    arr[n]=key;
+    return (n + 1); 
+}
+int main()
+{
+    int arr[20]={12,16,20,40,50,70};
+    int capacity=sizeof(arr)/sizeof(arr[0]);
+    int n=6;
+    int i,key=26;
+    printf("\n before insertion:");
+    for(i=0;i<n;i++)
+    printf("%d",arr[i]);
+    n = isertsorted(arr , n , key ,capacity);
+    printf("\n after insertion:");
+    for (i=0;i<n;i++)
+    printf("%d",arr[i]);
+    return 0;
+}
+
+
+OP
+
+AFTER INSERTION: 12 16 20 40 50 70
+BEFORE INSERTION:12 16 20 40 50 70 26
+
+
+
+
+
+========================================================================================================
+
+
+
+INSERTION SORT
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a[20],n,i,j,val;
+    printf("\n enter the no of elements\n");
+    scanf("%d",&n);
+    printf("enter the array elements %d",n);
+    for(i=0;i<n;i++)
+    scanf("%d",&a[i]);
+    for(i=1;i<n;i++)
+    {
+        val=a[i];
+        for(j=i-1;j>0 && a[j]>val;j--)
+        a[j+1]=a[j];
+        a[j+1]=val;
+    }
+    printf("\n sortted array\n");
+    for(i=0;i<n;i++)
+    printf("%d\t",a[i]);
+}
+
+
+
+
+==============================================================================================================
+
+
+SELECTION SORT
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a[20],n,i,j,min,temp;
+    printf("\n enter the no of elements\n");
+    scanf("%d",&n);
+    printf("enter the array elements %d",n);
+    for(i=0;i<n;i++)
+    {
+    min=i;
+    for(j=1+1;j<n;j++)
+   if(a[j]<a[min])
+   min=j;
+   temp=a[i];
+   a[i]=a[min];
+   a[min]=temp;
+    }
+    printf("\n selected array \n");
+    for(i=0;i<n;i++)
+    printf("%d\t",a[i]);
+}
+
+
+
+
+
+qix-iaut-qyb
+
+
+
+
+
+
+
+
